@@ -57,6 +57,7 @@ addButton.addEventListener('click', event => {
     let expense = list.newExpense();
     if (expense.year && expense.month && expense.day && expense.description && expense.cost && (expense.type !== 'Tipo')){
         list.objToList(expense);
+        alert('Despesa cadastrada com sucesso!');
     } else {
         alert('Você tem de preencher todos os campos.');
     }
